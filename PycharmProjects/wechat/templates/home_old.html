@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+
+{% block content%}
+
+<style>
+  .home-container{
+        display : grid;
+        grid-template-columns : 1fr 3fr 1fr
+
+  }
+
+
+</style>
+
+ <div class = "home-container">
+
+  <div>
+    {% include "topic-component.html" %}
+
+  </div>
+
+
+  <div>
+      <div>Number of rooms left is {{rooms_count}}</div>
+     <span><a href = "/create-room"><h3>Create Room</h3></a></span>
+
+      {% include "feed-component.html" %}
+
+
+  </div>
+
+     <div>
+        {% include "activity-component.html" %}
+         <a href = "{% url 'profile-page' user.id %}">Profile</a>
+     </div>
+
+ </div>
+{% endblock content%}
