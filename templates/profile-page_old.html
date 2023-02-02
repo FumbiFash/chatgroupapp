@@ -1,0 +1,46 @@
+{% extends "main.html" %}
+
+
+{% block content %}
+
+<style>
+    .profile-container{
+        display:grid;
+        grid-template-columns:1fr 3fr 1fr;
+
+
+    }
+    h1{
+        color:red;
+    }
+
+</style>
+
+<h1>Profile of  {{user.username}}</h1>
+
+<div class = profile-container>
+
+    <div>
+        {% include "topic-component.html" %}
+    </div>
+
+    <div>
+        {% include "feed-component.html" %}
+
+    </div>
+
+    <div>
+
+        {% include "activity-component.html" %}
+
+    </div>
+
+
+
+
+</div>
+
+
+
+{% endblock %}
+
