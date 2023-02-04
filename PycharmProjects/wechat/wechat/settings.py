@@ -134,7 +134,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = "/images/"
 
 STATICFILES_DIRS = [
-    BASE_DIR / "/Users/fumbi/PycharmProjects/wechat/static"
+    BASE_DIR / "static"
 ]
 
 MEDIA_ROOT = BASE_DIR/"static/images"
