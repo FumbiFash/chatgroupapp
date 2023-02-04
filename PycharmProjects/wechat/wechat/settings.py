@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-u6o%6ad8b8*1ui3dry812*+4i(sgu1n^nhag^c)o#4l^gco6sx
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
+ALLOWED_HOSTS = ['chatterbox-app.herokuapp.com']
 
 
 # Application definition
@@ -134,9 +134,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = "/images/"
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / "static"
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / "/Users/fumbi/PycharmProjects/wechat/static"
+]
 
 MEDIA_ROOT = BASE_DIR/"static/images"
 
@@ -148,6 +148,6 @@ MEDIA_ROOT = BASE_DIR/"static/images"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
