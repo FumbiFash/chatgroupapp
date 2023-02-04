@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-u6o%6ad8b8*1ui3dry812*+4i(sgu1n^nhag^c)o#4l^gco6sx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['chatterbox-app.herokuapp.com']
 
